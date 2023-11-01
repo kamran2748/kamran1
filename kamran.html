@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+
+<script>    
+while(true){
+
+  function Factorial(n) {
+    if (n < 0) {
+      return ;
+    } else if (n === 0) {
+      return 1;
+    } else {
+      let result = 1;
+      for (let i = 1; i <= n; i++) {
+        result *= i;
+      }
+      return result;
+    }
+  }
+  const userInput = prompt(" please enter a number: ");
+  const number = parseInt(userInput);
+  alert(Factorial(number));
+}
+</script>
+</body>
+</html>
